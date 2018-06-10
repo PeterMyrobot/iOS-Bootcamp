@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
-class CategoryViewController: UITableViewController {
+class CategoryViewController: SwipeTableViewController {
 
     let realm = try! Realm()
 
@@ -19,6 +20,7 @@ class CategoryViewController: UITableViewController {
         super.viewDidLoad()
 
         loadCategories()
+        tableView.separatorStyle = .none
 
     }
 
@@ -28,12 +30,23 @@ class CategoryViewController: UITableViewController {
         return categoryArray?.count ?? 1
         // Nil Coalescing Operator
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
-
-        cell.textLabel?.text = categoryArray?[indexPath.row].name ?? "No Categoety Added Yet"
+        
+        print("Prepare Cell")
+        
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        
+        if let category = categoryArray?[indexPath.row]{
+             print("Here is Data")
+            cell.textLabel?.text = category.name
+            guard let categoryColour = UIColor(hexString: category.cellBackgroundColor) else { fatalError()}
+            cell.backgroundColor = categoryColour
+            cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
+        }else {
+            print("No Data yet")
+            cell.textLabel?.text = "No Categoety Added Yet"
+        }
 
         return cell
     }
@@ -72,6 +85,20 @@ class CategoryViewController: UITableViewController {
 
         tableView.reloadData()
     }
+    
+    //MARK: - Delete Data From Swipe
+    
+    override func updateModel(at indexPath: IndexPath) {
+        if let deleteCategory = self.categoryArray?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(deleteCategory)
+                }
+            } catch {
+                print("Error od delete category \(error)")
+            }
+        }
+    }
 
     //MARK: - Add New Categories
 
@@ -87,6 +114,7 @@ class CategoryViewController: UITableViewController {
                 try self.realm.write {
                     let newCategory = Category()
                     newCategory.name = textField.text!
+                    newCategory.cellBackgroundColor = UIColor.randomFlat.hexValue()
                     self.realm.add(newCategory)
                 }
             } catch {
