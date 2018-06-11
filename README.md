@@ -26,6 +26,8 @@ This repo is basically the practice I did follow the course, every project will 
 
 10. Bitcoin Ticker
 
+11. Todoey
+
 # Some practice with Swift playground, terminal apps
 
 1. Classes and Objects
