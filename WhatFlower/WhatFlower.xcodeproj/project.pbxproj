@@ -12,7 +12,7 @@
 		8EA3579F20CFD908001D54E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA3579D20CFD908001D54E5 /* Main.storyboard */; };
 		8EA357A120CFD90B001D54E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA357A020CFD90B001D54E5 /* Assets.xcassets */; };
 		8EA357A420CFD90B001D54E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA357A220CFD90B001D54E5 /* LaunchScreen.storyboard */; };
-		8EA357AC20CFD928001D54E5 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8EA357AB20CFD928001D54E5 /* FlowerClassifier.mlmodel */; };
+		8EA357B020D02494001D54E5 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8EA357AF20D02494001D54E5 /* FlowerClassifier.mlmodel */; };
 		F25728E9A59E3B2AC9B531FC /* Pods_WhatFlower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73027D87362414FF6738047B /* Pods_WhatFlower.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		8EA357A020CFD90B001D54E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA357A320CFD90B001D54E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA357A520CFD90B001D54E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EA357AB20CFD928001D54E5 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
+		8EA357AF20D02494001D54E5 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				8EA357A020CFD90B001D54E5 /* Assets.xcassets */,
 				8EA357A220CFD90B001D54E5 /* LaunchScreen.storyboard */,
 				8EA357A520CFD90B001D54E5 /* Info.plist */,
-				8EA357AB20CFD928001D54E5 /* FlowerClassifier.mlmodel */,
+				8EA357AF20D02494001D54E5 /* FlowerClassifier.mlmodel */,
 			);
 			path = WhatFlower;
 			sourceTree = "<group>";
@@ -207,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA357AC20CFD928001D54E5 /* FlowerClassifier.mlmodel in Sources */,
+				8EA357B020D02494001D54E5 /* FlowerClassifier.mlmodel in Sources */,
 				8EA3579C20CFD908001D54E5 /* ViewController.swift in Sources */,
 				8EA3579A20CFD908001D54E5 /* AppDelegate.swift in Sources */,
 			);

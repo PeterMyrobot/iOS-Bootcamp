@@ -12,7 +12,7 @@
 		8EA3577F20CE69B1001D54E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA3577D20CE69B1001D54E5 /* Main.storyboard */; };
 		8EA3578120CE69B2001D54E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA3578020CE69B2001D54E5 /* Assets.xcassets */; };
 		8EA3578420CE69B2001D54E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA3578220CE69B2001D54E5 /* LaunchScreen.storyboard */; };
-		8EA3578C20CE69C9001D54E5 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3578B20CE69C9001D54E5 /* Inceptionv3.mlmodel */; };
+		8EA357B220D02536001D54E5 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8EA357B120D02536001D54E5 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		8EA3578020CE69B2001D54E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EA3578320CE69B2001D54E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA3578520CE69B2001D54E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EA3578B20CE69C9001D54E5 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		8EA357B120D02536001D54E5 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				8EA3578020CE69B2001D54E5 /* Assets.xcassets */,
 				8EA3578220CE69B2001D54E5 /* LaunchScreen.storyboard */,
 				8EA3578520CE69B2001D54E5 /* Info.plist */,
-				8EA3578B20CE69C9001D54E5 /* Inceptionv3.mlmodel */,
+				8EA357B120D02536001D54E5 /* Inceptionv3.mlmodel */,
 			);
 			path = SeeFood;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EA3577C20CE69B1001D54E5 /* ViewController.swift in Sources */,
-				8EA3578C20CE69C9001D54E5 /* Inceptionv3.mlmodel in Sources */,
+				8EA357B220D02536001D54E5 /* Inceptionv3.mlmodel in Sources */,
 				8EA3577A20CE69B1001D54E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
